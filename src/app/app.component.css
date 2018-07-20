@@ -1,0 +1,60 @@
+.toptool{
+	display: flex;
+	border-radius: .5em;
+}
+
+.heading{
+	width:78%;
+	
+}
+
+.hamburger{
+	width:22%;
+}
+
+.icon{
+	padding-right:1.5rem;
+}
+
+.matCardContainer{
+  	margin: 0 auto;	
+	display:grid;
+	grid-template-columns: 1fr;
+  	grid-template-rows: auto;
+  	grid-gap: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+@media only screen and (min-width: 500px) {
+  .matCardContainer{
+    grid-template-columns: 1fr 1fr;
+  }  
+}
+
+@media only screen and (min-width: 850px) {
+  .matCardContainer{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.example-card{
+	display: flex;
+  	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+	top: 0;
+	transition: all .1s ease-in;
+}
+
+.example-card:hover {
+  	top: -2px;
+  	box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}
+
+.title{
+	font-size: 1rem;	
+}
+
+mat-card-header{
+	flex: 1; /* make p grow to fill available space*/
+}
